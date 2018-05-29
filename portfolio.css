@@ -1,0 +1,81 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:#afa6a6;
+    margin: 2.5vh;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+
+}
+
+.banner .card {
+    background: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    font-style: inherit ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner .card .heading {
+    color: #9e9e9e;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding: 5vw;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner .card .sub-heading {
+    color: #9e9e9e;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 5vw 2vw;
+}
+.row.paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+
+
+}
+
+.row .my-image {
+    border: 1px solid #afa6a6;
+    border-radius: 5px; 
+    width: 25vw;
+}
+
+@media only screen and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+
+    }
+    .row .image {
+        order: -1;
+    }
+    .row .my-image {
+        width: 60vw;
+    }
+}
+
+.paragraph {
+    color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+    padding: 5vw 5vw 5vw 0;
+    
+}
+
